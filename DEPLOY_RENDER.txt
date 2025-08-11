@@ -1,0 +1,18 @@
+========================
+Render Blueprint (auto)
+========================
+
+1) Asegurate de tener el repo en GitHub: TodoTobi/D-Syntaxia-1.0
+2) Entrá a https://dashboard.render.com/iac
+3) Click en "New Blueprint Instance"
+4) Pegá la URL del repositorio y dejá la rama "main".
+5) Render detecta este archivo render.yaml y crea DOS servicios:
+   - sintaxia-backend (Node web service)
+   - sintaxia-frontend (Static Site)
+6) En Variables, completá los secretos marcados 'sync: false':
+   - HF_API_TOKEN
+   - GROQ_API_KEY (opcional)
+   - SKETCHFAB_TOKEN (opcional)
+7) Click en "Apply" -> Render crea ambos servicios y hace deploy automático.
+8) Esperá que terminen los deploys. El frontend quedará en onrender.com y
+   apuntará automáticamente al backend (se inyecta la URL en VITE_API_URL).
