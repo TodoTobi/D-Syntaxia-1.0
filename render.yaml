@@ -32,4 +32,3 @@ services:
     envVars:
       - key: VITE_API_URL
         value: https://sintaxia-backend.onrender.com
-value: https://sintaxia-backend.onrender.com
