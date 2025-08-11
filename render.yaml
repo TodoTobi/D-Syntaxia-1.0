@@ -31,7 +31,5 @@ services:
     staticPublishPath: dist
     envVars:
       - key: VITE_API_URL
-        fromService:
-          name: sintaxia-backend
-          type: web
-          property: url
+        value: https://sintaxia-backend.onrender.com
+value: https://sintaxia-backend.onrender.com
