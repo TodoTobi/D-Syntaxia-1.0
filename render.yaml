@@ -22,8 +22,9 @@ services:
       - key: SKETCHFAB_TOKEN
         sync: false
 
-  - type: static
+  - type: web
     name: sintaxia-frontend
+    env: static
     plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
