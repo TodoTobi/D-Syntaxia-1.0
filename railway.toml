@@ -1,0 +1,7 @@
+[build]
+root = "backend"
+
+[deploy]
+startCommand = "node server.js"
+healthcheckPath = "/api/ai"
+restartPolicyType = "ON_FAILURE"

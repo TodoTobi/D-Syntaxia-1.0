@@ -1,0 +1,16 @@
+:root{ --bg:#0b0c10; --card:#111217; --text:#eaecef; --muted:#9aa1ac; --accent:#6ee7ff; }
+*{ box-sizing:border-box }
+body{ margin:0; font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto; background:var(--bg); color:var(--text); }
+.container{ max-width:980px; margin:0 auto; padding:24px }
+.card{ background:var(--card); border:1px solid #1a1d24; border-radius:16px; padding:20px; box-shadow:0 10px 30px rgba(0,0,0,.25) }
+.row{ display:flex; gap:16px; flex-wrap:wrap }
+.btn{ padding:10px 16px; border-radius:12px; border:1px solid #222; background:#181b22; color:#fff; cursor:pointer }
+.btn.primary{ background:linear-gradient(90deg,#3aa9ff,#6ee7ff); color:#071018; font-weight:700; border:0 }
+input[type=file]{ display:block; width:100% }
+img.preview{ max-width:100%; border-radius:12px; border:1px solid #222 }
+.badge{ display:inline-block; padding:6px 10px; border-radius:999px; background:#121826; border:1px solid #223; color:#9fd2ff }
+.overlay{ position:absolute; inset:0; pointer-events:none }
+.box{ position:absolute; border:2px solid #6ee7ff; border-radius:6px; }
+.nav{ display:flex; justify-content:space-between; align-items:center; padding:14px 0 }
+.nav h1{ font-size:20px; letter-spacing:.6px }
+.link{ color:#9fd2ff; cursor:pointer }

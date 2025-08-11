@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: sintaxia-backend
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    healthCheckPath: /api/ai
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: CORS_ORIGIN
+        value: https://your-vercel-app.vercel.app
+      - key: HF_API_TOKEN
+        sync: false
+      - key: HF_DETECTION_MODEL
+        value: facebook/detr-resnet-50
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_MODEL
+        value: mixtral-8x7b-32768
+      - key: SKETCHFAB_TOKEN
+        sync: false
