@@ -2,7 +2,6 @@ services:
   - type: web
     name: sintaxia-backend
     env: node
-    plan: free
     rootDir: backend
     buildCommand: npm install
     startCommand: node server.js
@@ -25,7 +24,6 @@ services:
   - type: web
     name: sintaxia-frontend
     env: static
-    plan: free
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: dist
